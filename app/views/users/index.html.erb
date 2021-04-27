@@ -1,0 +1,46 @@
+<%= stylesheet_link_tag "style" %>
+<body>
+	<h1>Login</h1>
+	<form action="/sessions" method="POST">
+		<input type="hidden" name="authenticity_token"
+		value="<%=form_authenticity_token%>">
+		<input type="email" name="login[email]" placeholder="Email">
+		<input type="password" name="login[password]"
+		placeholder="Password">
+		<input type="submit" name="submit" class="submit">
+		<p><%= link_to 'Forgot password?', new_password_reset_path %></p>
+	</form>
+	  <div class="errors">
+		<% if flash[:login_errors] %>
+			<% flash[:login_errors].each do |error| %>
+				<p> <%=error%></p>
+			<%end%>
+		<%end%>
+
+	<h1>Registeration</h1>
+	<form id="register" action="/users" method="POST
+	">
+		<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+		<input type="name" name="user[name]" placeholder="Name" required minlength="6">
+		<input type="email" name="user[email]" placeholder="Email" required>
+		<input type="password" name="user[password]" id="user[password]" placeholder="Password"
+		pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+		<input type="password" name="user[password_confirmation" placeholder="Password Confirmation ">
+		<button type="submit" name="submit" class="submit">Submit Here</button>
+	</form>
+	<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+	<div class="errors">
+		<% if flash[:register_errors] %>
+			<% flash[:register_errors].each do |error| %>
+				<p> <%=error%></p>
+			<%end%>
+		<%end%>
+	</div>
+</body>
+	<%= javascript_include_tag "index", "data-turbolinks-track" => true  %>
