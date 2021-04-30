@@ -16169,3 +16169,314 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-04-29 12:09:11 +0530
+  [1m[35m (37.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 974.6ms | Allocations: 52267)
+Completed 200 OK in 1141ms (Views: 1010.4ms | ActiveRecord: 0.0ms | Allocations: 55437)
+
+
+Started GET "/password_resets/new" for ::1 at 2021-04-29 12:09:37 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 431)
+Completed 200 OK in 104ms (Views: 102.8ms | ActiveRecord: 0.0ms | Allocations: 6214)
+
+
+Started GET "/password_resets/style.css" for ::1 at 2021-04-29 12:09:37 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PasswordResetsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-04-29 12:11:21 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 6.3ms | Allocations: 1614)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 3921)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:11:23 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 15.2ms | Allocations: 1296)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 2982)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:11:24 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 8.2ms | Allocations: 1295)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 2980)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:11:58 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 10.9ms | Allocations: 1593)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 3866)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:14:52 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 1.1ms | Allocations: 227)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 3896)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:17:07 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 1.1ms | Allocations: 224)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 3885)
+
+
+Started GET "/users?authenticity_token=SVyBYegfWvzZS8nWJ%2FvAOnkl430SrTlwmKLrxKNVqPOOdkNQuHjZ7zIELdo9SgQLBcmFtCccPWEguQKcfCk7pA%3D%3D&user%5Bname%5D=amm123&user%5Bemail%5D=amm%40gmail.com&user%5Bpassword%5D=[FILTERED]&user%5Bpassword_confirmation=[FILTERED]&submit=" for ::1 at 2021-04-29 12:18:45 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"SVyBYegfWvzZS8nWJ/vAOnkl430SrTlwmKLrxKNVqPOOdkNQuHjZ7zIELdo9SgQLBcmFtCccPWEguQKcfCk7pA==", "user"=>{"name"=>"amm123", "email"=>"amm@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>""}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (27.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "amm@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "amm123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (39.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "amm123"], ["email", "amm@gmail.com"], ["password_digest", "$2a$12$.iCBU6HM9NILkoV7j1bd4.k2DmG5kDye85/Yr1/JKIKJEVrvgvLMu"], ["created_at", "2021-04-29 06:48:46.527941"], ["updated_at", "2021-04-29 06:48:46.527941"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[35m (22.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 876ms (ActiveRecord: 245.9ms | Allocations: 13978)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-29 12:18:46 +0530
+Processing by AuthsController#index as HTML
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:4:in `authenticate_user'
+  Rendering auths/index.html.erb within layouts/application
+  Rendered auths/index.html.erb within layouts/application (Duration: 28.6ms | Allocations: 84)
+Completed 200 OK in 100ms (Views: 74.2ms | ActiveRecord: 13.4ms | Allocations: 6312)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:18:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/logout?submit=" for ::1 at 2021-04-29 12:18:49 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"submit"=>""}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 3.8ms | Allocations: 1011)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:18:49 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 2984)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:11:19 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 1.0ms | Allocations: 224)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 3883)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:11:20 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 0.4ms | Allocations: 78)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2974)
+
+
+Started POST "/sessions" for ::1 at 2021-04-29 15:11:25 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PhRWeVbzEuUuTLc6ExeDikdYTHxECCWdnBxOD4laC8j5PpRIBpSR9sUDUzYJpke7O7QqtXG5IYwkB6dXViaYnw==", "login"=>{"email"=>"", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 542ms (ActiveRecord: 1.1ms | Allocations: 1259)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:11:26 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 0.4ms | Allocations: 72)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3008)
+
+
+Started POST "/sessions" for ::1 at 2021-04-29 15:59:57 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"eFGoj/RUVbeUVk/dttLVKEqKtpElzz+dGCICR3GT2gO/e2q+pDPWpH8Zq9GsYxEZNmbQWBB+O4ygOesfru9JVA==", "login"=>{"email"=>"", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 696ms (ActiveRecord: 2.7ms | Allocations: 1160)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:59:58 +0530
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/lay
+  Rendered users/index.html.erb within layouts/lay (Duration: 0.4ms | Allocations: 72)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 3001)
+
+
+Started GET "/password_resets/new" for ::1 at 2021-04-29 16:00:03 +0530
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 401)
+Completed 200 OK in 58ms (Views: 51.1ms | ActiveRecord: 0.0ms | Allocations: 5732)
+
+
+Started GET "/password_resets/style.css" for ::1 at 2021-04-29 16:00:04 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PasswordResetsController):
+  
+actionpack (6.0.3.6) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

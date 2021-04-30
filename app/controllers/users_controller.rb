@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	
+	layout 'lay'
 	def index
 	end
 	def create
